@@ -4,7 +4,6 @@ export const HeaderComponent = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 10rem;
   height: 6.5rem;
 
   div {

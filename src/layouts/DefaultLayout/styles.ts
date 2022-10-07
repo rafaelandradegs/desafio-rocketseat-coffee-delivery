@@ -1,6 +1,10 @@
 import styled from 'styled-components'
 
 export const LayoutContainer = styled.div`
-  width: 100%;
+  flex-direction: column;
+  background-color: #fafafa;
+  margin: 0 auto;
+  display: flex;
   height: 100vh;
+  padding: 0 8rem;
 `

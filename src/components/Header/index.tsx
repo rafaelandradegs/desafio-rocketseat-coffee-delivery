@@ -3,7 +3,7 @@ import logo from '../../assets/logo.svg'
 import { MapPin, ShoppingCart } from 'phosphor-react'
 
 export function Header() {
-  const list = false
+  const list = true
 
   return (
     <HeaderComponent>

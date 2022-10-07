@@ -8,8 +8,11 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: #FAFAFA;
+    display: flex;
+    margin: 0 auto;
+    background-color: #FFFFFF;
     font-family: 'Roboto', sans-serif;   
+    width: 90rem;
   }
   button {
     cursor: pointer;
