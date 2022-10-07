@@ -5,7 +5,7 @@ export const PageIntroContainer = styled.div`
   grid-template-columns: 1fr 1fr;
   justify-items: stretch;
   margin-top: 5.75rem;
-  width: 100%;
+  margin-bottom: 6.75rem;
 
   h1 {
     color: ${({ theme }) => theme['base-title']};
@@ -19,6 +19,16 @@ export const PageIntroContainer = styled.div`
     color: ${({ theme }) => theme['base-subtitle']};
     line-height: 130%;
     size: 1.25rem;
+  }
+
+  section {
+    display: flex;
+    justify-content: flex-end;
+
+    img {
+      width: 476px;
+      height: 360px;
+    }
   }
 `
 export const PageItems = styled.div`

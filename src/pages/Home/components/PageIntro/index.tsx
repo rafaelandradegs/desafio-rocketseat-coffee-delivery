@@ -1,4 +1,4 @@
-import imageIntro from '../../../../assets/image-page-intro.svg'
+import imageIntro from '../../../../assets/image-page-intro.png'
 import { ShoppingCart, Timer, Package, Coffee } from 'phosphor-react'
 
 import {
@@ -51,8 +51,9 @@ export function PageIntro() {
           </div>
         </PageItems>
       </div>
-
-      <img src={imageIntro} alt="" />
+      <section>
+        <img src={imageIntro} alt="" />
+      </section>
     </PageIntroContainer>
   )
 }

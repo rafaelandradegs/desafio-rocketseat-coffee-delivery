@@ -5,6 +5,6 @@ export const LayoutContainer = styled.div`
   background-color: #fafafa;
   margin: 0 auto;
   display: flex;
-  height: 100vh;
+  height: 100%;
   padding: 0 8rem;
 `
