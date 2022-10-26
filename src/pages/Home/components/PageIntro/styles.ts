@@ -1,24 +1,33 @@
 import styled from 'styled-components'
+import imageBlur from '../../../../assets/image-blur.svg'
 
 export const PageIntroContainer = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: stretch;
-  margin-top: 5.75rem;
-  margin-bottom: 6.75rem;
+  display: flex;
+  justify-content: space-between;
+  background-image: url(${imageBlur});
+  margin-left: -10rem;
+  align-items: center;
+  padding: 0 10rem;
+  height: 34rem;
+  width: 90rem;
+
+  .boxText {
+    width: 36.75rem;
+  }
 
   h1 {
     color: ${({ theme }) => theme['base-title']};
     font-family: 'Baloo 2';
     line-height: 130%;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 3rem;
     margin-bottom: 1rem;
   }
-  p {
+
+  .subTitleSlogan {
     color: ${({ theme }) => theme['base-subtitle']};
     line-height: 130%;
-    size: 1.25rem;
+    font-size: 1.25rem;
   }
 
   section {
@@ -26,8 +35,8 @@ export const PageIntroContainer = styled.div`
     justify-content: flex-end;
 
     img {
-      width: 476px;
-      height: 360px;
+      width: 30rem;
+      height: 23rem;
     }
   }
 `
@@ -43,6 +52,9 @@ export const PageItems = styled.div`
   p {
     display: flex;
     align-items: center;
+    color: ${({ theme }) => theme['base-text']};
+    line-height: 130%;
+    font-size: 1rem;
     gap: 0.75rem;
   }
 `

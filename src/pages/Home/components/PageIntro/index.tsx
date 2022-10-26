@@ -13,9 +13,9 @@ import {
 export function PageIntro() {
   return (
     <PageIntroContainer>
-      <div>
+      <div className="boxText">
         <h1>Encontre o café perfeito para qualquer hora do dia</h1>
-        <p>
+        <p className="subTitleSlogan">
           Com o Coffee Delivery você recebe seu café onde estiver, a qualquer
           hora
         </p>

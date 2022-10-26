@@ -7,13 +7,10 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
-  body {
-    display: flex;
-    margin: 0 auto;
-    background-color: #FFFFFF;
-    font-family: 'Roboto', sans-serif;   
-    width: 90rem;
+  body {    
+    font-family: 'Roboto', sans-serif;      
   }
+
   button {
     cursor: pointer;
   }

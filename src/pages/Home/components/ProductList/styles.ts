@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const ProductListContainer = styled.main`
+export const ProductListContainer = styled.div`
   margin-top: 2rem;
   height: 100vh;
 
