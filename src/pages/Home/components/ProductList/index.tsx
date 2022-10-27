@@ -1,31 +1,46 @@
 import { Minus, Plus, ShoppingCartSimple } from 'phosphor-react'
+import { useState } from 'react'
+import expresso from '../../../../assets/xicaras/expresso.png'
 
-import { CoffeeCard, ProductListContainer } from './styles'
+import { CoffeeCard } from './styles'
 
 export function ProductList() {
+  const [cartQuantity, setCartQuantity] = useState(0)
   return (
-    <ProductListContainer>
-      <h2>Nossos cafés</h2>
+    <CoffeeCard>
+      <img src={expresso} alt="" />
 
-      <CoffeeCard>
-        <img src="" alt="" />
-        <span>Tradicionales</span>
-        <h4>Expresso Tradicional</h4>
-        <p>O tradicional café feito com água quente e grãos moidos</p>
-        <div>
-          <span>
-            R$ <strong>9,90</strong>
-          </span>
-          <div>
-            <Minus size={14} weight="bold" />
-            <input type="text" />
-            <Plus size={14} weight="bold" />
+      <div className="additional">
+        <p>tradicional</p>
+        <p>com leite</p>
+        <p>alcoólico</p>
+      </div>
+
+      <h1 className="coffeeFlavor">Expresso Tradicional</h1>
+
+      <p className="description">
+        O tradicional café feito com água quente e grãos moidos
+      </p>
+
+      <div className="footerCard">
+        <span>
+          R$ <strong>9,90</strong>
+        </span>
+        <div className="itemAndCart">
+          <div className="numberItems">
+            <button onClick={() => setCartQuantity(cartQuantity - 1)}>
+              <Minus size={14} weight="bold" />
+            </button>
+            <span>{cartQuantity}</span>
+            <button onClick={() => setCartQuantity(cartQuantity + 1)}>
+              <Plus size={14} weight="bold" />
+            </button>
           </div>
-          <button>
-            <ShoppingCartSimple size={16} weight="bold" />
+          <button className="cart">
+            <ShoppingCartSimple size={20} weight="bold" />
           </button>
         </div>
-      </CoffeeCard>
-    </ProductListContainer>
+      </div>
+    </CoffeeCard>
   )
 }
